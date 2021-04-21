@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   # end
   namespace :api do
     post "/sessions" => "sessions#create"
+    get "/students" => "students#index"
   end
 end
