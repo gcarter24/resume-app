@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
     get "/students" => "students#index"
     get "/students/:id" => "students#show"
+    patch "/students/:id" => "students#update"
   end
 end
