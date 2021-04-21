@@ -5,7 +5,8 @@ class Api::StudentsController < ApplicationController
   end
 
   def create
-    
+    @student = Student.find_by(id: params[:id])
+    render "show.json.jb"
   end
 
   def show
